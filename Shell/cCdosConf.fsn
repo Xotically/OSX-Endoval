@@ -4,7 +4,7 @@ for ([$, !, %, ^, *, @, ~] in this ) {
 	$ Ls > new [ cConsole.runner ] this LsEnd 
 }.cConsole.new > this
 
-cConsole [ properties ] () {
+cConsole [ "properties" ] () {
   Ls.header = [ $ ]
 	Ls.entry = [ % ]
 	Ls.hidden = [ * ]
