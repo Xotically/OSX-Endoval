@@ -5,7 +5,7 @@ for ([$, !, %, ^, *, @, ~] in this ) {
 }.cConsole.new > this
 
 cConsole [ "properties" ] () {
-  Ls.header = [ $ ]
+        Ls.header = [ $ ]
 	Ls.entry = [ % ]
 	Ls.hidden = [ * ]
 	Ls.detect = [ @ ]
