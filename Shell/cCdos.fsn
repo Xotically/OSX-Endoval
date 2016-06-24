@@ -34,11 +34,11 @@ $ Ls [ "init" ] {
 	}
 	
 	init.print [ % ] 
-	$ LsIn ignore [ $ @ ~ ^ * ] LsOut
+	$ LsIn ignore [ $ + ~ ^ * ] LsOut
 	# Cannot Remove All Vars For End Point #
 	% EndPoint > [ % ]
 	# Reinstate them #
-	% LsIn unIgnore [ $ @ ~ ^ * ] LsOut
+	% LsIn unIgnore [ $ @ ~ ! * ] LsOut
 }
 
 $ Ls [ "clear" ] {
@@ -57,7 +57,7 @@ $ Ls [ "clear" ] {
 
 $ Ls [ "webserver" ] {
     if (!cmd) $ endClear LsEnd
-	if (!frost.exports.webserver) $ endClear LsEnd
+	if (!frost.exports.webserver) $ EndClear LsEnd
 	if (webserver in Ls.file()) {
 	    $ LsTop [ @int ] [ "webserver" ] LsEnd
 	} else if (webserver in Ls.file(".hpy")) {
