@@ -1,0 +1,74 @@
+# FROST OSX CONSOLE FOLDER #
+# CHANGES ARE NOT TO BE MADE TO THIS FILE #
+if (!frostOsx) LsTop [ "" ] $ endClear LsEnd
+
+# Clear Function #
+$ Ls [ "clear" ] else LsTop [ "" ] $ endClear LsEnd
+
+<<< To Do: Fix The Variable Not Existing >>>
+if (!variable) ignoreIf LsOut [ "2" ]
+
+if (!frost) LsIn [ @error ] [ ~heap.hpy ]
+if (!frost.export) LsIn [ @error ] [ ~exports.hpy ]
+
+$ Ls [ "cmd" ] {
+    if (!cmd) $ endClear LsEnd
+	if (cmd in Ls.file()) {
+	    $ LsTop [ @int ] [ "Ls.file" ] LsEnd
+	} else if (cmd in Ls.file(".hpy")) {
+	    $ LsIn [ @int.cmd(~.hpy) ] [ @file ] LsOut
+	}
+	
+	Ls.readFile [ this ] LsOut
+}
+
+$ Ls [ "init" ] {
+    if (!cmd) $ endClear LsEnd
+	if (init in Ls.file()) {
+	    $ LsTop [ @int ] [ "Ls.print" ] LsEnd 
+	} else if (init in Ls.file(".hpy")) {
+	    $ LsIn [ @int.init(~.hpy) ] [ @file ] LsOut
+	}
+	
+	init.print [ % ] 
+	$ LsIn ignore [ $ @ ~ ^ * ] LsOut
+	# Cannot Remove All Vars For End Point #
+	% EndPoint > [ % ]
+	# Reinstate them #
+	% LsIn unIgnore [ $ @ ~ ^ * ] LsOut
+}
+
+$ Ls [ "clear" ] {
+    if (!cmd) $ endClear LsEnd
+	if (clear in Ls.file()) {
+	    $ LsTop [ @int ] [ "clear" ] LsEnd
+	} else if (clear in Ls.file(".hpy")) {
+	    $ LsIn [ @int.clear(~.hpy) ] [ @file ] LsOut
+	}
+	
+	$ Ls [ "clear" ] else LsTop [ "" ] $ endClear 
+	  continueIf [ "clear" ] in [ @this ] then 
+	    $ Ls [ "clear" ] else LsTop [ "" ] $ endClear
+	LsEnd
+}
+
+$ Ls [ "webserver" ] {
+    if (!cmd) $ endClear LsEnd
+	if (!frost.exports.webserver) $ endClear LsEnd
+	if (webserver in Ls.file()) {
+	    $ LsTop [ @int ] [ "webserver" ] LsEnd
+	} else if (webserver in Ls.file(".hpy")) {
+	    $ LsIn [ @int.webserver(~.hpy) ] [ @file ] LsOut
+	}
+	
+	Ls case > [ "getdomain" ] {
+	    $ domain = [ this [%%domainType %%domainHeader] ]
+		LsIn [ @getdomain > domainType ] [ domainHeader $ this ]
+		LsOut
+		
+		$ LsIn getdomain $ endClear LsOut
+	}
+	
+	! webserver
+}
+
