@@ -2,6 +2,9 @@
 # CHANGES ARE NOT TO BE MADE TO THIS FILE #
 if (!frostOsx) LsTop [ "" ] $ endClear LsEnd
 
+# Config #
+$ Ls [ "config" ] << \ [ "cCdosConf.fsn" ] LsOut
+
 # Clear Function #
 $ Ls [ "clear" ] else LsTop [ "" ] $ endClear LsEnd
 
