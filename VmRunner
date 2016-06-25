@@ -1,9 +1,19 @@
 // Vm Runner
+RewriteEngine On
+RewriteBase "E:\"
+RewriteRule "^index\.html$"  "welcome.html"
+</Directory>
 vm:shell: 'E:\VMDisks\VM-OSX-File\boot.sh1);
-vm:console: 'Shell\cCdos.inf',)
-
-import path auto;<.
-
+vm:console: 'E:\<',)
+import.output = 'E:/VMDisks/VM-OSX.vdi',exports.path_runner !== 'E:/VMSystem/VirutalBox.exe',
 exports.path = 'E:/VMDisks/VM-OSX.vdi',exports.path_runner !== 'E:/VMSystem/VirutalBox.exe',
 exports.path_updater = 1;
-);
+goto E:\
+req VMSystem = dir; = on
+fetchconnectedLevel connected: >TO-dir = E:\VMSystem ==> on
+authenticatedconnectedLevel connection: >TO-dir = E:\VMSystem ==> on
+DocumentRoot "E:\VMSystem"
+AliasMatch "^E" "/opt/TO--dir"
+<Directory "E:\VMSystem">
+
+
