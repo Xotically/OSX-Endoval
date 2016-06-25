@@ -1,9 +1,11 @@
 // Vm Runner
 vm:shell: 'E:\VMDisks\VM-OSX-File\boot.sh1);
-vm:console: 'Shell\cCdos.inf',)
+// This is for the VM to run its console remotely, So leave as is
+vm:console: 'Shell\cCdos.fsyt',)
 
 import path auto;<.
 
-exports.path = 'E:/VMDisks/VM-OSX.vdi',exports.path_runner !== 'E:/VMSystem/VirutalBox.exe',
+exports.path = 'E:/VMDisks/VM-OSX.vdi',
+exports.path_runner !== 'E:/VMSystem/VirutalBox.exe',
 exports.path_updater = 1;
 );
