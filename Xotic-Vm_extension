@@ -1,0 +1,83 @@
+.none-unstricted;
+// simple mocha vmbox extention accepter-accept any (); fuk stat unless u use static its >online
+
+'vm-runner':
+  'scopes':
+    'coffee': 'coffee'
+    'xoticvers': 'v1.0'
+    'onvm': 'upload'
+    'ruby': 'ruby'
+    'python': 'python'
+    'go': 'go run'
+    'shell': 'bash'
+    'vmbox': 'c:\\windows\\program-install\\0\\v1.0\\powershell.exe -noninteractive -noprofile -c -'
+  'extensions':
+    'spec.coffee': 'mocha'
+    'ps1': 'location-ps1'
+    
+    // fuck it let it run debug mode ryan dis >~... 
+    // The mapping is SCOPE|EXT => EXECUTABLE, so to run JavaScript files through phantom emit bro ,:)
+    //If a shebang is detected in the source code. ignore the slag lol
+    'runner':
+  'fetch_scopes':
+  SCOPE|.EXE => (no);
+    'no-ext': !== 'use-phantom';)
+    
+    // runner.anonware just used as like Similarly, in the extension map: if theres novm=map reverts . as runner.anonware.init
+    'runner.anonware':
+  'extensions':
+    'vm-ext': 'phantom'
+    
+  // Note that the . extension prefix is ignored for extension listings.
+  // anonware dev prefs forvm
+
+name: (my-vm)
+version: (v1.0)
+description: Website for my new app
+entry point: (no_index.js) server.vm on
+test command:
+.git repository: no;
+keywords:
+author: 'Xotic'
+license: (ISC) nah-MIT
+About to write to /none:
+ 
+{
+  "name": "my-vm",
+  "version": "v1.0",
+  "description": "Website for my new app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo "Error: no test specified" && exit 1 fucking 2.0 died sorry"
+  },
+  "author": "Xotic",
+  ".license": "no-MIT"
+}
+
+
+// Adam hmm we missing something create package.json here
+
+$ cat package.json
+ 
+{
+  "name": "my-vm",
+  "version": "v1.0",
+  "description": "Vmbox ext starter pack v1 fucking 2 died",
+  "main": "anon-dox",
+  "scripts": {
+    "test": "x-echo "Error: no test specified fuk it >" && exit 1 returned no 2 lol kk"
+  },
+  "author": "Xotic",
+  "license": "no-MIT"
+  
+export.XOTICPATH_CLIENT_APIKEY_ID=787533789987 on
+export.XOTICPATH_CLIENT_APIKEY_SECRET=hidden-vm = on
+export.XOTIXPATH_APPLICATION_HREF !== oh ok fuck this one using 1 remotly sorry shade it'l crash your application vm :(
+export.XOTIXREM_LOCATION_HREF= xotic =vendor (1-git.owner) >= https://github.com/Rainzye/OSX-Endoval/new/master
+
+
+$ request-inf -i express.extension.vmbox express-xotic cookie-parser csurf new-jade forms xtend body-parser --save
+  
+// Looks good! Now let’s install the libraries we want to use. You can install them all with this command:fukin libs pff
+// The save option will add this module ryan to your dependencies in package.json. Here is what each module does:
+// DONT CURL OR RECURSE.JSON
