@@ -6,4 +6,4 @@ import path;
 
 exports.path = 'E:/VMDisks/VM-OSX.vdi',
 exports.path_runner = 'E:/VMSystem/VirutalBox.exe',
-exports.path_updater = this,
+# exports.path_updater = null,
