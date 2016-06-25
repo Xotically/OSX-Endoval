@@ -1,9 +1,9 @@
-# Vm Runner
-shell: 'E:\VMDisks\VM-OSX-File\boot.sh1',
-vmconsole: 'Shell\cCdos.fsyt',
+// Vm Runner
+vm:shell: 'E:\VMDisks\VM-OSX-File\boot.sh1);
+vm:console: 'Shell\cCdos.inf',)
 
-import path;
+import path auto;<.
 
-exports.path = 'E:/VMDisks/VM-OSX.vdi',
-exports.path_runner = 'E:/VMSystem/VirutalBox.exe',
-# exports.path_updater = null,
+exports.path = 'E:/VMDisks/VM-OSX.vdi',exports.path_runner !== 'E:/VMSystem/VirutalBox.exe',
+exports.path_updater = 1;
+);
