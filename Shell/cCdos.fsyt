@@ -3,7 +3,7 @@
 if (!frostOsx) LsTop [ "" ] $ endClear LsEnd
 
 # Config #
-$ Ls [ "config" ] << \ [ "cCdosConf.fsn" ] LsOut
+$ Ls [ "config" ] << \ [ "cCdosConf.fsyt" ] LsOut
 
 # Clear Function #
 $ Ls [ "clear" ] else LsTop [ "" ] $ endClear LsEnd
