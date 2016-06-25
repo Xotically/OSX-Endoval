@@ -5,13 +5,8 @@ for ([$, !, %, ^, *, @, ~] in this ) {
 }.cConsole.new > this
 
 cConsole [ "properties" ] () {
-        Ls.header = [ $ ]
-	Ls.entry = [ % ]
-	Ls.hidden = [ * ]
-	Ls.detect = [ @ ]
-	Ls.search = [ ~ ]
-	Ls.system = [ ^ ]
-	Ls.destroy = [ ! ]
-	
-	Ls.runner = ( this > matches [ $, !, %, *, @, ~, ^ ])
+    Ls.header = [ $ ] || Ls.entry = [ % ] || Ls.hidden = [ * ] || Ls.detect = [ @ ] || Ls.search = [ ~ ] || Ls.system = [ ^ ] || Ls.destroy = [ ! ]
+    Ls.runner = ( this > matches [ $, !, %, *, @, ~, ^ ])
+    
+    endClear = LsIn send [ "" ] < cConsole [ "" ] LsOut
 }
